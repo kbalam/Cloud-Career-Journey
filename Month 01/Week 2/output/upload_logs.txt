@@ -1,2 +1,7 @@
 [2025-05-30 11:46:16.496730] ✅ Uploaded 'sample_file.txt' to 's3://my-practise-bucket-01/uploads/sample_file.txt'
 [2025-05-30 11:47:17.312054] ✅ Uploaded 'sample_file.txt' to 's3://my-practise-bucket-01/uploads/sample_file.txt'
+[2025-05-30 13:49:01.364464] ❌ File not found: non-existent_file.txt
+[2025-05-30 13:58:06.019156] ❌ Access denied to bucket 'my-practise-bucket'.
+[2025-05-30 13:58:38.693889] ❌ Error checking bucket: An error occurred (400) when calling the HeadBucket operation: Bad Request
+[2025-05-30 13:59:11.632570] ❌ Access denied to bucket 'unknown-bucket'.
+[2025-05-30 13:59:45.670780] ✅ Uploaded 'sample_file.txt' to 's3://my-practise-bucket-01/uploads/sample_file.txt'

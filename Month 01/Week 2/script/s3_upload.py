@@ -1,17 +1,41 @@
 #!/usr/bin/env python3
 import boto3
 from botocore.exceptions import NoCredentialsError, ClientError
+from boto3.exceptions import S3UploadFailedError
 import os
 from datetime import datetime
 
 # === CONFIGURATION ===
-BUCKET_NAME = "my-practise-bucket-01"     
-FILE_PATH = "sample_file.txt"         
+BUCKET_NAME = "my-practise-bucket-01"     ## Tested with wrong bucket name
+FILE_PATH = "sample_file.txt"         ## Tested with file that is not exist.
 OBJECT_NAME = "uploads/sample_file.txt"  
 LOG_FILE = "../output/upload_logs.txt"  
 
+# === Checking if Bucket exist Logic ===
+def check_bucket_exists(bucket_name):
+    s3 = boto3.client("s3")
+    try:
+        s3.head_bucket(Bucket=bucket_name)
+        return True
+    except ClientError as e:
+        error_code = int(e.response['Error']['Code'])
+        if error_code == 404:
+            error = f"[{datetime.now()}] ❌ Bucket '{bucket_name}' does not exist."
+        elif error_code == 403:
+            error = f"[{datetime.now()}] ❌ Access denied to bucket '{bucket_name}'."
+        else:
+            error = f"[{datetime.now()}] ❌ Error checking bucket: {e}"
+        print(error)
+        log_to_file(error)
+        return False
+
+
 # === Upload Logic ===
 def upload_to_s3(file_path, bucket, object_name):
+
+    if not check_bucket_exists(bucket):
+        return
+    
     s3 = boto3.client('s3')
     try:
         s3.upload_file(file_path, bucket, object_name)
@@ -30,6 +54,11 @@ def upload_to_s3(file_path, bucket, object_name):
         error = f"[{datetime.now()}] ❌ AWS Error: {e}"
         print(error)
         log_to_file(error)
+    except S3UploadFailedError as e:
+        error = f"[{datetime.now()}] ❌ Upload failed: {e}"
+        print(error)
+        log_to_file(error)
+
 
 # === Logger ===
 def log_to_file(message):
