@@ -5,3 +5,4 @@
 [2025-05-30 13:58:38.693889] ❌ Error checking bucket: An error occurred (400) when calling the HeadBucket operation: Bad Request
 [2025-05-30 13:59:11.632570] ❌ Access denied to bucket 'unknown-bucket'.
 [2025-05-30 13:59:45.670780] ✅ Uploaded 'sample_file.txt' to 's3://my-practise-bucket-01/uploads/sample_file.txt'
+[2025-05-30 14:06:59.555178] ✅ Uploaded 'sample_file.txt' to 's3://my-practise-bucket-01/uploads/sample_file.txt'
