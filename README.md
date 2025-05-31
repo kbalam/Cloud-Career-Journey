@@ -7,22 +7,23 @@ This repository demonstrates hands-on experience across **AWS**, **Linux adminis
 
 ## 📍 Career Objective
 
-To transition from a BPO support role into a technical cloud position by gaining industry-relevant skills and building a public portfolio that reflects real support and automation workflows.
+To transition into a technical cloud position by gaining industry-relevant skills and building a public portfolio that reflects real support and automation workflows.
 
 ---
 
 ## 🧭 Learning Roadmap
 
-| Month      | Core Focus Areas                                                      |
-|------------|------------------------------------------------------------------------|
-| **Month 1** | AWS IAM, EC2, S3, CLI; Linux fundamentals; Python basics             |
-| **Month 2** | Scripting, automation, cron, CloudWatch, boto3 integration           |
+| Month       | Core Focus Areas                                                           |
+|-------------|----------------------------------------------------------------------------|
+| **Month 1** | AWS IAM, EC2, S3, CLI; Linux fundamentals; Python basics                   |
+| **Month 2** | Scripting, automation, cron, CloudWatch, boto3 integration                 |
 | **Month 3** | Project builds, certification prep (AWS Cloud Practitioner), job readiness |
 
 ---
 
 ## 🗂️ Repository Structure
 
+```
 cloud-career-journey/
 ├── Month 01/
 │ ├── AWS.md
@@ -35,21 +36,21 @@ cloud-career-journey/
 │ ├── #/
 │ └── #/
 ├── README.md
-
+```
 
 Each monthly folder contains:
-- 🔹 Topic-specific markdown documentation (`AWS.md`, `Linux.md`, `Python.md`)
-- 🔹 Working scripts and automation tasks
-- 🔹 CLI outputs, system logs, and screenshots
+ 🔹 Topic-specific markdown documentation (`AWS.md`, `Linux.md`, `Python.md`)
+ 🔹 Working scripts and automation tasks
+ 🔹 CLI outputs, system logs, and screenshots
 
 ---
 
 ## ✅ Current Progress
 
-| Week     | Focus Areas Covered                              | Status |
-|----------|--------------------------------------------------|--------|
-| **Week 1** | IAM, EC2, Billing Alerts, Python I/O, Linux CLI  | ✅ Complete |
-| **Week 2** | S3 (console + CLI), bash scripting, cron, boto3  | ✅ Complete |
+| Week       | Focus Areas Covered                              | Status         |
+|------------|--------------------------------------------------|----------------|
+| **Week 1** | IAM, EC2, Billing Alerts, Python I/O, Linux CLI  | ✅ Complete    |
+| **Week 2** | S3 (console + CLI), bash scripting, cron, boto3  | ✅ Complete    |
 | **Week 3** | Advanced file handling, CloudWatch, networking   | 🔜 In Progress |
 
 ---
@@ -66,7 +67,7 @@ Each monthly folder contains:
 ## 🎯 Outcome
 
 By the end of this journey, this repository will:
-- Demonstrate job-ready cloud support skills
+- Demonstrate job-ready cloud skills
 - Include fully working automation projects (e.g., EC2 monitoring, S3 backups)
 - Serve as a technical showcase for recruiters and hiring managers
 
