@@ -26,12 +26,20 @@ To transition into a technical cloud position by gaining industry-relevant skill
 ```
 cloud-career-journey/
 ├── Month 01/
-│ ├── AWS.md
-│ ├── Linux.md
-│ ├── Python.md
-│ ├── scripts/
-│ ├── output/
-│ └── screenshots/
+│ ├── Week-01/
+│ │ ├── AWS.md
+│ │ ├── Linux.md
+│ │ ├── Python.md
+│ │ ├── scripts/
+│ │ ├── output/
+│ │ └── screenshots/
+│ ├── Week-02/
+│ │ ├── AWS.md
+│ │ ├── Linux.md
+│ │ ├── Python.md
+│ │ ├── scripts/
+│ │ ├── output/
+│ │ └── screenshots/
 ├── Projects/
 │ ├── #/
 │ └── #/
@@ -39,9 +47,9 @@ cloud-career-journey/
 ```
 
 Each monthly folder contains:
- 🔹 Topic-specific markdown documentation (`AWS.md`, `Linux.md`, `Python.md`)
- 🔹 Working scripts and automation tasks
- 🔹 CLI outputs, system logs, and screenshots
+- 🔹 Topic-specific markdown documentation (`AWS.md`, `Linux.md`, `Python.md`)
+- 🔹 Working scripts and automation tasks
+- 🔹 CLI outputs, system logs, and screenshots
 
 ---
 
