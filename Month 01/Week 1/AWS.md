@@ -12,8 +12,8 @@
 - Enabled billing alert using CloudWatch
 
 ## 📸 Screenshots
-- [IAM user created](./screenshots/iam-user.png)
-- [EC2 running instance](./screenshots/ec2-instance.png)
+- [IAM user created](./screenshots/IAM.png)
+- [EC2 running instance](./screenshots/EC2.png)
 
 ## 🧠 Reflections
 - Learned the importance of not using the root user
