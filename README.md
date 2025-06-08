@@ -40,6 +40,13 @@ cloud-career-journey/
 │ │ ├── scripts/
 │ │ ├── output/
 │ │ └── screenshots/
+│ ├── Week-03/
+│ │ ├── AWS.md
+│ │ ├── Linux.md
+│ │ ├── Python.md
+│ │ ├── scripts/
+│ │ ├── output/
+│ │ └── screenshots/
 ├── Projects/
 │ ├── #/
 │ └── #/
@@ -55,11 +62,12 @@ Each monthly folder contains:
 
 ## ✅ Current Progress
 
-| Week       | Focus Areas Covered                              | Status         |
-|------------|--------------------------------------------------|----------------|
-| **Week 1** | IAM, EC2, Billing Alerts, Python I/O, Linux CLI  | ✅ Complete    |
-| **Week 2** | S3 (console + CLI), bash scripting, cron, boto3  | ✅ Complete    |
-| **Week 3** | Advanced file handling, CloudWatch, networking   | 🔜 In Progress |
+| Week       | Focus Areas Covered                                                     | Status         |
+|------------|-------------------------------------------------------------------------|----------------|
+| **Week 1** | IAM, EC2, Billing Alerts, Python I/O, Linux CLI                         | ✅ Complete    |
+| **Week 2** | S3 (console + CLI), bash scripting, cron, boto3                         | ✅ Complete    |
+| **Week 3** | EC2-based monitoring script, cron setup, log parsing with Python        | ✅ Complete    |
+| **Week 4** | CloudWatch Logs, Agent install, custom metrics, alarm setup             | 🔜 In Progress |
 
 ---
 
@@ -83,6 +91,6 @@ By the end of this journey, this repository will:
 
 ## 🙋 About Me
 
-**kbalam** – Former support agent making a focused transition into Cloud Engineering. Passionate about automation, problem-solving, and building reliable cloud infrastructure.
+**Balamurugan K** – Former support agent making a focused transition into Cloud Engineering. Passionate about automation, problem-solving, and building reliable cloud infrastructure.
 
 Connect on [LinkedIn](https://www.linkedin.com/in/kbalam/)
