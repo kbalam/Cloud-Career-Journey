@@ -1,0 +1,5 @@
+InstanceId: i-0abc123def456gh78
+InstanceType: t2.micro
+State: running
+LaunchTime: 2025-06-02T10:05:00Z
+AvailabilityZone: ap-south-1a

@@ -1,0 +1,63 @@
+=======================================Thu Jun  5 07:00:58 PM IST 2025=====================================================
+Linux
+==============================================================================================
+bala     seat0        2025-06-05 18:35 (login screen)
+bala     tty2         2025-06-05 18:35 (tty2)
+==============================================================================================
+Filesystem           Size  Used Avail Use% Mounted on
+tmpfs                793M  1.5M  791M   1% /run
+/dev/sda2             24G   13G  9.6G  58% /
+tmpfs                3.9G     0  3.9G   0% /dev/shm
+tmpfs                5.0M  8.0K  5.0M   1% /run/lock
+efivarfs             256K  151K  101K  61% /sys/firmware/efi/efivars
+/dev/sda1            1.1G  6.2M  1.1G   1% /boot/efi
+Linux_Shared_Folder  150G  184M  150G   1% /home/bala/Shared_Folder
+tmpfs                793M  140K  793M   1% /run/user/1000
+/dev/sr0              59M   59M     0 100% /media/bala/VBox_GAs_7.1.8
+==============================================================================================
+Architecture:                         x86_64
+CPU op-mode(s):                       32-bit, 64-bit
+Address sizes:                        39 bits physical, 48 bits virtual
+Byte Order:                           Little Endian
+CPU(s):                               8
+On-line CPU(s) list:                  0-7
+Vendor ID:                            GenuineIntel
+Model name:                           12th Gen Intel(R) Core(TM) i5-12500H
+CPU family:                           6
+Model:                                154
+Thread(s) per core:                   1
+Core(s) per socket:                   8
+Socket(s):                            1
+Stepping:                             3
+BogoMIPS:                             6220.82
+Flags:                                fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx rdtscp lm constant_tsc rep_good nopl xtopology nonstop_tsc cpuid tsc_known_freq pni pclmulqdq ssse3 cx16 sse4_1 sse4_2 movbe popcnt aes rdrand hypervisor lahf_lm abm 3dnowprefetch ibrs_enhanced fsgsbase bmi1 bmi2 invpcid rdseed adx clflushopt sha_ni arat md_clear flush_l1d arch_capabilities
+Hypervisor vendor:                    KVM
+Virtualization type:                  full
+L1d cache:                            384 KiB (8 instances)
+L1i cache:                            256 KiB (8 instances)
+L2 cache:                             10 MiB (8 instances)
+L3 cache:                             144 MiB (8 instances)
+NUMA node(s):                         1
+NUMA node0 CPU(s):                    0-7
+Vulnerability Gather data sampling:   Not affected
+Vulnerability Itlb multihit:          Not affected
+Vulnerability L1tf:                   Not affected
+Vulnerability Mds:                    Not affected
+Vulnerability Meltdown:               Not affected
+Vulnerability Mmio stale data:        Not affected
+Vulnerability Reg file data sampling: Mitigation; Clear Register File
+Vulnerability Retbleed:               Mitigation; Enhanced IBRS
+Vulnerability Spec rstack overflow:   Not affected
+Vulnerability Spec store bypass:      Vulnerable
+Vulnerability Spectre v1:             Mitigation; usercopy/swapgs barriers and __user pointer sanitization
+Vulnerability Spectre v2:             Mitigation; Enhanced / Automatic IBRS; RSB filling; PBRSB-eIBRS SW sequence; BHI SW loop, KVM SW loop
+Vulnerability Srbds:                  Not affected
+Vulnerability Tsx async abort:        Not affected
+==============================================================================================
+ 19:00:58 up 33 min,  1 user,  load average: 0.55, 0.35, 0.34
+==============================================================================================
+               total        used        free      shared  buff/cache   available
+Mem:            7921        1217        5744          43        1242        6703
+Swap:           4095           0        4095
+==============================================================================================
+
