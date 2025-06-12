@@ -47,6 +47,11 @@ cloud-career-journey/
 │ │ ├── scripts/
 │ │ ├── output/
 │ │ └── screenshots/
+├── Week-04/
+│ │ ├── AWS.md
+│ │ ├── scripts/
+│ │ ├── output/
+│ │ └── screenshots/
 ├── Projects/
 │ ├── #/
 │ └── #/
@@ -67,7 +72,8 @@ Each monthly folder contains:
 | **Week 1** | IAM, EC2, Billing Alerts, Python I/O, Linux CLI                         | ✅ Complete    |
 | **Week 2** | S3 (console + CLI), bash scripting, cron, boto3                         | ✅ Complete    |
 | **Week 3** | EC2-based monitoring script, cron setup, log parsing with Python        | ✅ Complete    |
-| **Week 4** | CloudWatch Logs, Agent install, custom metrics, alarm setup             | 🔜 In Progress |
+| **Week 4** | CloudWatch Logs, Agent, Custom Metrics, Alarms, Log Insights            | ✅ Complete    |
+| **Week 5** | **🛠️ Project: EC2Monitor – Build full EC2 monitoring + alert pipeline** | 🔜 In Progress |
 
 ---
 
