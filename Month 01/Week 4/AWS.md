@@ -38,7 +38,7 @@
 
 ---
 
-## 📸 Screenshots (Optional)
+## 📸 Screenshots
 - [Creating Log Group](./screenshots/CLI/Creating%20Log%20group.png)
 - [Logging Events](./screenshots/CLI/Log%20events.png)
 - [Cloudwatch Agent Installation](./screenshots/CLI/Cloudwatch%20Agent.png)
