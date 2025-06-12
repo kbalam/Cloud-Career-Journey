@@ -1,0 +1,7 @@
+  608  aws logs create-log-group --log-group-name demo-log-group
+  609  aws logs create-log-stream --log-group-name demo-log-group --log-stream-name test-stream
+  610  aws logs put-retention-policy --log-group-name demo-log-group --retention-in-days 1
+  611  aws logs put-log-events --log-group-name demo-log-group --log-stream-name test-stream --log-events "[{\"timestamp\": $(date +%s000), \"message\": \"Hello via script.\"}]"
+  612  aws logs put-log-events --log-group-name demo-log-group --log-stream-name test-stream --log-events "[{\"timestamp\": $(date +%s000), \"message\": \"ERROR no script found.\"}]" --sequence-token 49664134606756402800906283612781941118283822322245697778
+  613  aws logs put-log-events --log-group-name demo-log-group --log-stream-name test-stream --log-events "[{\"timestamp\": $(date +%s000), \"message\": \"CPU limit 70.\"}]" --sequence-token 49660746684659779746971715931089546392457766717265805538
+ 
