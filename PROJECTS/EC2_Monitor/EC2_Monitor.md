@@ -171,16 +171,16 @@ Your EC2 instance must use an IAM Role with the following policy:
 
 ## 🖼️ Screenshots - Visual Proof
 
-[Metric Creation](./Screenshots/Metric%20Namespaces.png)
-[CPU Metric Graph](./Screenshots/CPU%20Metric%20Graph.png)
-[Process Count Graph](./Screenshots/Process%20Count%20Graph.png)
-[Alarm Creation](./Screenshots/Alarm.png)
-[Log Groups](./Screenshots/Log%20Groups.png)
-[Agent Log Files](./Screenshots/Agent%20Logs.png)
-[Script Log Files](./Screenshots/Script_Logs.png)
-[Log Insights](./Screenshots/Log%20Insights.png)
-[CPU SNS Notifcation](./Screenshots/CPU%20Notification.png)
-[Process Count SNS](./Screenshots/Process%20Notification.png)
+- [Metric Creation](./Screenshots/Metric%20Namespaces.png)
+- [CPU Metric Graph](./Screenshots/CPU%20Metric%20Graph.png)
+- [Process Count Graph](./Screenshots/Process%20Count%20Graph.png)
+- [Alarm Creation](./Screenshots/Alarm.png)
+- [Log Groups](./Screenshots/Log%20Groups.png)
+- [Agent Log Files](./Screenshots/Agent%20Logs.png)
+- [Script Log Files](./Screenshots/Script_Logs.png)
+- [Log Insights](./Screenshots/Log%20Insights.png)
+- [CPU SNS Notifcation](./Screenshots/CPU%20Notification.png)
+- [Process Count SNS](./Screenshots/Process%20Notification.png)
 
 ---
 
