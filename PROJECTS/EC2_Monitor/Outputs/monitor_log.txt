@@ -1,0 +1,30 @@
+=================================LOGGEDIN_USERS========================================================
+ec2-user pts/0        2025-07-12 21:43 (122.164.84.175)
+=================================SYSTEM_UPTIME=========================================================
+up 10 hours, 22 minutes
+=================================CPU==================================================================
+CPU_Usage = 6.2%
+=================================MEMORY===============================================================
+Memory_Usage = Used: 174MB Free:259MB Available: 630MB
+=================================DISK=================================================================
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/xvda1      8.0G  2.0G  6.0G  25% /
+=================================LOAD_AVERAGE=========================================================
+ 21:45:02 up 10:22,  1 user,  load average: 0.00, 0.02, 0.00
+=================================RUNNING_PROCESS======================================================
+> Top 5 CPU-using processes:
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root        7814  0.3 12.2 1388660 119232 ?      Ssl  12:52   1:36 /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent -config /opt/aws/amazon-cloudwatch-agent/etc/amazon-cloudwatch-agent.toml -envconfig /opt/aws/amazon-cloudwatch-agent/etc/env-config.json -otelconfig /opt/aws/amazon-cloudwatch-agent/etc/amazon-cloudwatch-agent.yaml -pidfile /opt/aws/amazon-cloudwatch-agent/var/amazon-cloudwatch-agent.pid
+root           1  0.0  1.8 107132 17524 ?        Ss   11:22   0:10 /usr/lib/systemd/systemd --switched-root --system --deserialize=32
+root           2  0.0  0.0      0     0 ?        S    11:22   0:00 [kthreadd]
+root           3  0.0  0.0      0     0 ?        I<   11:22   0:00 [rcu_gp]
+root           4  0.0  0.0      0     0 ?        I<   11:22   0:00 [rcu_par_gp]
+> Top 5 Memory-using processes:
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root        7814  0.3 12.2 1388660 119232 ?      Ssl  12:52   1:36 /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent -config /opt/aws/amazon-cloudwatch-agent/etc/amazon-cloudwatch-agent.toml -envconfig /opt/aws/amazon-cloudwatch-agent/etc/env-config.json -otelconfig /opt/aws/amazon-cloudwatch-agent/etc/amazon-cloudwatch-agent.yaml -pidfile /opt/aws/amazon-cloudwatch-agent/var/amazon-cloudwatch-agent.pid
+root        1092  0.0  3.7  69924 36844 ?        Ss   11:22   0:02 /usr/lib/systemd/systemd-journald
+root        2137  0.0  1.9 1240440 18812 ?       Ssl  11:22   0:01 /usr/bin/amazon-ssm-agent
+root           1  0.0  1.8 107132 17524 ?        Ss   11:22   0:10 /usr/lib/systemd/systemd --switched-root --system --deserialize=32
+systemd+    1779  0.0  1.4  22520 13656 ?        Ss   11:22   0:00 /usr/lib/systemd/systemd-resolved
+> Total number of processes: 105
+======================================================================================================
