@@ -106,6 +106,7 @@ fields @timestamp, @message
 | parse @message "Pushed process count '*'" as processCount
 | stats avg(processCount) as AvgProcessCount, max(processCount) as MaxProcessCount, min(processCount) as MinProcessCount by bin(5m)
 | sort @timestamp desc
+```
 
 ---
 
