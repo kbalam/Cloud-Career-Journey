@@ -73,7 +73,7 @@ Each monthly folder contains:
 | **Week 2** | S3 (console + CLI), bash scripting, cron, boto3                         | ✅ Complete    |
 | **Week 3** | EC2-based monitoring script, cron setup, log parsing with Python        | ✅ Complete    |
 | **Week 4** | CloudWatch Logs, Agent, Custom Metrics, Alarms, Log Insights            | ✅ Complete    |
-| **Week 5** | **🛠️ Project: EC2Monitor – Build full EC2 monitoring + alert pipeline** | 🔜 In Progress |
+| **Week 5** | **🛠️ Project: EC2Monitor – Build full EC2 monitoring + alert pipeline** | ✅ Complete    |
 
 ---
 
