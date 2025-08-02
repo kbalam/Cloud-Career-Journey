@@ -66,7 +66,7 @@ Each monthly folder contains:
   [View on Credly](https://www.credly.com/badges/db07293c-2d72-4c7e-9419-d4a2dc4d58e8/public_url)
 
 <a href="https://www.credly.com/badges/db07293c-2d72-4c7e-9419-d4a2dc4d58e8/public_url" target="_blank">
-  <img src="https://images.credly.com/images/00634f82-b07f-4bbd-a6bb-53de397fc3a6/image.png" alt="AWS CCP Badge" width="120"/>
+  <img src="https://images.credly.com/images/00634f82-b07f-4bbd-a6bb-53de397fc3a6/image.png" alt="AWS CCP Badge" width="200"/>
 </a>
 
 
