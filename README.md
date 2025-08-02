@@ -27,34 +27,14 @@ To transition into a technical cloud position by gaining industry-relevant skill
 cloud-career-journey/
 ├── Month 01/
 │ ├── Week-01/
-│ │ ├── AWS.md
-│ │ ├── Linux.md
-│ │ ├── Python.md
-│ │ ├── scripts/
-│ │ ├── output/
-│ │ └── screenshots/
 │ ├── Week-02/
-│ │ ├── AWS.md
-│ │ ├── Linux.md
-│ │ ├── Python.md
-│ │ ├── scripts/
-│ │ ├── output/
-│ │ └── screenshots/
 │ ├── Week-03/
-│ │ ├── AWS.md
-│ │ ├── Linux.md
-│ │ ├── Python.md
-│ │ ├── scripts/
-│ │ ├── output/
-│ │ └── screenshots/
-├── Week-04/
-│ │ ├── AWS.md
-│ │ ├── scripts/
-│ │ ├── output/
-│ │ └── screenshots/
+│ └── Week-04/
+├── Month 02/
+│ ├── Week-05/ <-- Terraform & IaC (Completed)
+│ └── Week-06/ <-- CI/CD & Automation (Next)
 ├── Projects/
-│ ├── #/
-│ └── #/
+│ └── EC2Monitor/
 ├── README.md
 ```
 
@@ -67,31 +47,54 @@ Each monthly folder contains:
 
 ## ✅ Current Progress
 
-| Week       | Focus Areas Covered                                                     | Status         |
-|------------|-------------------------------------------------------------------------|----------------|
-| **Week 1** | IAM, EC2, Billing Alerts, Python I/O, Linux CLI                         | ✅ Complete    |
-| **Week 2** | S3 (console + CLI), bash scripting, cron, boto3                         | ✅ Complete    |
-| **Week 3** | EC2-based monitoring script, cron setup, log parsing with Python        | ✅ Complete    |
-| **Week 4** | CloudWatch Logs, Agent, Custom Metrics, Alarms, Log Insights            | ✅ Complete    |
-| **Week 5** | **🛠️ Project: EC2Monitor – Build full EC2 monitoring + alert pipeline** | ✅ Complete    |
+| Week       | Focus Areas Covered                                           | Status         |
+|------------|---------------------------------------------------------------|----------------|
+| **Week 1** | IAM, EC2, Billing Alerts, Python I/O, Linux CLI               | ✅ Complete    |
+| **Week 2** | S3 (console + CLI), bash scripting, cron, boto3 integration   | ✅ Complete    |
+| **Week 3** | File mgmt, user mgmt, cron jobs, CloudWatch Agent             | ✅ Complete    |
+| **Week 4** | CloudWatch Logs, log insights, permissions in Linux           | ✅ Complete    |
+|           | **Project: EC2Monitor** – EC2 + CloudWatch + boto3 monitoring  | ✅ Complete    |
+| **Week 5** | Terraform IaC: S3, EC2, IAM, Variables, Modules               | ✅ Complete    |
+| **Week 6** | CI/CD Basics, CodePipeline, Lambda Automation                 | 🔜 Upcoming    |
+
+---
+
+## 🧪 Certifications
+
+- ✅ **AWS Certified Cloud Practitioner (CLF-C02)**  
+  Earned: **July 2025**
+
+[![AWS CCP Badge](https://images.credly.com/images/00634f82-b07f-4bbd-a6bb-53de397fc3a6/image.png)](https://www.credly.com/badges/db07293c-2d72-4c7e-9419-d4a2dc4d58e8/public_url)
+
 
 ---
 
 ## 💡 Tools & Technologies
 
-- **Cloud:** AWS (IAM, EC2, S3, CloudWatch)
-- **Automation:** AWS CLI, Python (boto3), Bash, Crontab
-- **Systems:** Ubuntu Linux, Terminal, SSH
-- **Documentation:** Markdown, Git, GitHub
+- **Cloud:** AWS (IAM, EC2, S3, CloudWatch, VPC, CodePipeline, Lambda)
+- **Automation:** Python (boto3), AWS CLI, Bash, Crontab
+- **IaC:** Terraform (Resources, Variables, Outputs, Modules)
+- **CI/CD (Upcoming):** GitHub Actions, CodePipeline, CloudTrail
+- **Systems:** Ubuntu Linux (VirtualBox), SSH, systemd
+- **Docs & Git:** Markdown, Git, GitHub
+
+---
+
+## 🧪 Projects
+
+| Name           | Description                                                   | Status     |
+|----------------|---------------------------------------------------------------|------------|
+| **EC2Monitor** | CloudWatch + EC2 + Bash + boto3 monitoring with cron          | ✅ Complete |
+| **(Upcoming)** | CloudResponder                                     | 🕓 Planning |
 
 ---
 
 ## 🎯 Outcome
 
 By the end of this journey, this repository will:
-- Demonstrate job-ready cloud skills
-- Include fully working automation projects (e.g., EC2 monitoring, S3 backups)
-- Serve as a technical showcase for recruiters and hiring managers
+- Demonstrate job-ready cloud and automation skills
+- Include fully working real-world projects
+- Serve as a technical portfolio for recruiters and hiring managers
 
 ---
 
