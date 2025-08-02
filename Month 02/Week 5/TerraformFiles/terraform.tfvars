@@ -1,0 +1,7 @@
+ami = "ami-0d0ad8bb301edb745"
+key = "practise_key"
+bucket_name = "bala-demo-tf-bucket"
+user_name = "Cloudsupport_User"
+iam_user_policy_arn = "arn:aws:iam::aws:policy/AmazonEC2FullAccess"
+role_name = "EC2ReadOnly"
+iam_role_policy_arn = "arn:aws:iam::aws:policy/AmazonEC2ReadOnlyAccess"
