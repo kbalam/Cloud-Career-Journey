@@ -62,9 +62,13 @@ Each monthly folder contains:
 ## 🧪 Certifications
 
 - ✅ **AWS Certified Cloud Practitioner (CLF-C02)**  
-  Earned: **July 2025**
+  Earned: **July 2025**  
+  [View on Credly](https://www.credly.com/badges/db07293c-2d72-4c7e-9419-d4a2dc4d58e8/public_url)
 
-[![AWS CCP Badge](https://images.credly.com/images/00634f82-b07f-4bbd-a6bb-53de397fc3a6/image.png)](https://www.credly.com/badges/db07293c-2d72-4c7e-9419-d4a2dc4d58e8/public_url)
+<a href="https://www.credly.com/badges/db07293c-2d72-4c7e-9419-d4a2dc4d58e8/public_url" target="_blank">
+  <img src="https://images.credly.com/images/00634f82-b07f-4bbd-a6bb-53de397fc3a6/image.png" alt="AWS CCP Badge" width="120"/>
+</a>
+
 
 
 ---
