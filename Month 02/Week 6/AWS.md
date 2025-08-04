@@ -31,7 +31,7 @@
 ## 📁 Outputs
 
 - [S3 bucket name: `my-debugger-bucket`](./Outputs/S3%20creation.png)
-- [S3 Object creation: `Samle.txt`](./Outputs/S3OjectUploaded.png)
+- [S3 Object creation: `Sample.txt`](./Outputs/S3OjectUploaded.png)
 - [IAM user: `brokenUser`](./Outputs/IAM%20user.png)
 - [CLI test results (403)](./Screenshots/CLI%20-%20%20S3%20Error%20Message.png)
 
