@@ -48,7 +48,7 @@
 
 ---
 
-## Scripts
+## Policies
 
 - [IAM Policy](./Scripts/policy.json)
 - [Bucket Policy](./Scripts/S3ReadOnlyPolicy.json)
