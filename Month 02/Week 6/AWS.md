@@ -83,8 +83,8 @@ This week focuses on practical troubleshooting tasks for common AWS services (S3
 
 ## Policies
 
-- [IAM Policy](./Scripts/policy.json)
-- [Bucket Policy](./Scripts/S3ReadOnlyPolicy.json)
+- [IAM Policy](./Policies/policy.json)
+- [Bucket Policy](./Policies/S3ReadOnlyPolicy.json)
 
 ## 🧠 Reflections
 
