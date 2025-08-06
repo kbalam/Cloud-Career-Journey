@@ -109,11 +109,11 @@ Re-tested and validated access
 - [CLI - Attaching IAM Policy](./Screenshots/CLI%20-%20Attaching%20Iam%20Policy.png)
 - [CLI - Debbugging S3](./Screenshots/CLI%20-%20Debugging%20S3.png)
 - [Permission error (403) on CLI](./Screenshots/CLI%20-%20BucketPolicyRestriction.png)
-
+----
 - [EC2 Issue Simulation](./Screenshots/Simulating%20EC2%20issue.png)
 - [Debugged KeyPair issue](./Screenshots/Debugged%20Keypair%20issue.png)
 - [Debugged SSH issue](./Screenshots/Dubugging%20SSH.png)
-
+----
 - [IAM User with limited access](./Screenshots/IAM%20with%20limited%20access.png)
 - [Debugging IAM access issue](./Screenshots/Dubbging%20IAM%20issue.png)
 - [IAM Explicit Deny Policy](./Screenshots/IAM%20inline%20Deny%20policy.png)
