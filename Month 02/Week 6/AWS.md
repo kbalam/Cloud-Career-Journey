@@ -1,59 +1,94 @@
-# Week 06 – Cloud Learning Track
+# Week 06 – Cloud Learning
 
----
-
-This week focuses on practical troubleshooting tasks for common AWS services (S3, EC2) aligned with real-world support issues. Each day simulates a support ticket with CLI-based debugging, step-by-step fixes, and reflection.
+This week simulates common real-world AWS support issues using CLI, debugging flags, and IAM policy evaluation. Each task mirrors actual L1/L2 support tickets handled in production environments.
 
 ---
 
 ## ✅ Topics Covered
 
-| Day | Service | Focus Area |
-|-----|---------|------------|
-| 1   | S3      | Access issues, permission models, 403/404 debugging |
-| 2   | EC2     | SSH access, security groups, key pair recovery      |
+| Day | Service | Focus Area                                      |
+|-----|---------|--------------------------------------------------|
+| 1   | S3      | Access issues, permission models, 403/404 errors |
+| 2   | EC2     | SSH access, key pair & security group issues     |
+| 3   | IAM     | AccessDenied errors & policy troubleshooting     |
 
 ---
 
 ## 🧪 Hands-On Summary
 
+---
+
 ### 🟦 **Day 1: S3 Access Troubleshooting**
 
 **Simulated Errors:**
-- `403 AccessDenied`: Missing or blocked permission
-- `404 Not Found`: Wrong object or bucket
-- `400 Bad Request`: Invalid URL syntax
+- `403 AccessDenied` – IAM or bucket policy restriction
+- `404 NotFound` – Missing object or wrong path
+- `400 BadRequest` – Malformed URL
 
-**Key Tasks:**
-- Created S3 bucket via CLI/Console
-- Uploaded test object
-- Created IAM user with limited access
-- Simulated and fixed permission errors using IAM and bucket policies
-- Used `--debug` flag to trace CLI-level access issues
+**Actions Taken:**
+- Created S3 bucket via Console & CLI  
+- Uploaded object using CLI  
+- Created IAM user with limited permissions  
+- Simulated access errors by removing `s3:GetObject`  
+- Added inline policy, removed explicit deny  
+- Used `--debug` CLI flag for tracing errors  
 
 ---
 
-### 🟩 **Day 2: EC2 Boot & SSH Access Troubleshooting**
+### 🟩 **Day 2: EC2 SSH & Boot Debugging**
 
-**Simulated Errors:**
-- Timeout on SSH (port 22 blocked)
-- Key pair not attached
-- Wrong SSH user
-- Console logs missing
+**Simulated Issues:**
+- SSH timeout → Port 22 blocked  
+- Permission denied → Wrong user  
+- Missing key pair → Unable to connect  
+- Instance boot errors → No system logs
 
-**Key Tasks:**
-- Launched EC2 without key pair + blocked port 22
-- Attempted SSH from local Ubuntu VM
-- Debugged using:
-  - `describe-instances`
-  - `get-console-output`
+**Actions Taken:**
+- Launched EC2 with no SSH access + wrong user  
+- SSH from local Ubuntu VM failed  
+- Used:
+  - `aws ec2 describe-instances`
+  - `aws ec2 get-console-output`
 - Fixed by:
-  - Opening port 22 in SG
-  - Relaunching EC2 with valid key pair
-  - Using correct SSH user (`ubuntu`)
-  - Rebooting instance and checking logs
+  - Adding port 22 in SG  
+  - Relaunching with proper key pair  
+  - Using correct username (`ec2_user`)  
+  - Rebooting instance and checking logs  
 
 ---
+
+### 🟨 **Day 3: IAM AccessDenied Debugging**
+
+**Simulated Case:**
+IAM user running CLI commands fails with:
+
+ `An error occurred (AccessDenied) when calling the DescribeInstances operation: User is not authorized to perform: ec2:DescribeInstances`
+
+
+**Root Causes Simulated:**
+- No policy attached for EC2 access  
+- Explicit deny (optional test)  
+- Policy allows only specific resources or regions  
+- Wrong CLI profile
+
+**Steps Taken:**
+1. Created IAM user `brokenIAMUser` with S3 read-only access  
+2. Configured CLI profile:
+    `aws configure --profile brokenIAMUser`
+
+```bash
+aws s3 ls --profile brokenIAMUser                          # ✅ Success
+aws ec2 describe-instances --profile brokenIAMUser         # ❌ AccessDenied
+aws ec2 describe-instances --debug --profile brokenIAMUser # 🔍 Traced
+```
+
+Fixed by attaching:
+
+`AmazonEC2ReadOnlyAccess`
+
+or inline custom policy allowing `ec2:DescribeInstances`
+
+Re-tested and validated access
 
 ---
 
@@ -86,17 +121,29 @@ This week focuses on practical troubleshooting tasks for common AWS services (S3
 - [IAM Policy](./Policies/policy.json)
 - [Bucket Policy](./Policies/S3ReadOnlyPolicy.json)
 
+---
+
+### 🔐 Fix Steps Summary
+
+| Issue                    | Root Cause                             | Fix Applied                                      |
+|--------------------------|----------------------------------------|--------------------------------------------------|
+| S3 AccessDenied          | No permission or explicit deny         | Updated IAM and bucket policies                  |
+| EC2 SSH timeout          | Port 22 not open                       | Added inbound rule in SG                         |
+| EC2 Permission denied    | Key pair missing or wrong user         | Used valid key + default username                |
+| IAM AccessDenied on EC2  | Missing `ec2:DescribeInstances`        | Attached EC2 read-only policy                    |
+| Wrong CLI profile        | Wrong key or region in config          | Switched to correct profile                      |
+
+
 ## 🧠 Reflections
 
-- 🔐 **S3:** Realized how access to objects depends on IAM + bucket policy + block public access. `403` errors are not always straightforward.
-- 💻 **EC2:** Gained hands-on experience with SSH troubleshooting: SG misconfig, key mismatch, wrong username — just like real-world escalations.
-- 🛠️ CLI tools like `--debug`, `describe-instances`, and `get-console-output` are critical in support triage workflows.
-
----
+- S3 access issues often result from multi-layered policies (IAM + bucket + block public access).
+- EC2 SSH failures mimic real-world panic cases — knowing how to read console logs is crucial.
+- IAM permission debugging using --debug and understanding evaluation flow is a core support skill.
+- CLI profile separation is great for testing policies in isolation — just like support engineers do.
 
 ## 🔗 Resources
 
-- [S3 Bucket Policy Examples](https://docs.aws.amazon.com/AmazonS3/latest/userguide/example-bucket-policies.html)
-- [EC2 Key Pair Troubleshooting](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-key-pairs.html)
-- [SSH Troubleshooting for EC2](https://repost.aws/knowledge-center/ec2-linux-resolve-ssh-connection-errors)
-- [AWS CLI Command Reference](https://docs.aws.amazon.com/cli/latest/index.html)
+- [IAM Policy Evaluation Logic](./https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_evaluation-logic.html)
+- [S3 Permissions](https://docs.aws.amazon.com/AmazonS3/latest/userguide/security_iam_service-with-iam.html#security_iam_service-with-iam-id-based-policies-actions)
+- [EC2 SSH Troubleshooting](https://repost.aws/knowledge-center/ec2-linux-resolve-ssh-connection-errors)
+- [AWS CLI Command Reference](https://docs.aws.amazon.com/cli/latest/)
