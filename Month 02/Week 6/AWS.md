@@ -2,29 +2,58 @@
 
 ---
 
-## ✅ Topics Covered – Day 1
-
-- S3 architecture and permission models
-- Types of access errors (403, 404, etc.)
-- IAM policies vs bucket policies vs ACLs
-- Block public access settings
-- Using AWS CLI to simulate and debug S3 access issues
+This week focuses on practical troubleshooting tasks for common AWS services (S3, EC2) aligned with real-world support issues. Each day simulates a support ticket with CLI-based debugging, step-by-step fixes, and reflection.
 
 ---
 
-## 🧪 Hands-On
+## ✅ Topics Covered
 
-- Created an S3 bucket using the AWS CLI and Console
-- Uploaded test object (Sample.txt) via CLI
-- Created IAM user with restricted S3 access
-- Simulated the following S3 errors:
-  - `403 AccessDenied`: No permission or blocked by policy
-  - `404 Not Found`: Object missing or wrong bucket
-  - `400 Bad Request`: Invalid bucket/object URL
-- Used the `--debug` flag to trace CLI permission failures
-- Fixed permission issues step-by-step:
-  - Updated IAM policy to allow `s3:GetObject`
-  - Removed explicit deny from bucket policy
+| Day | Service | Focus Area |
+|-----|---------|------------|
+| 1   | S3      | Access issues, permission models, 403/404 debugging |
+| 2   | EC2     | SSH access, security groups, key pair recovery      |
+
+---
+
+## 🧪 Hands-On Summary
+
+### 🟦 **Day 1: S3 Access Troubleshooting**
+
+**Simulated Errors:**
+- `403 AccessDenied`: Missing or blocked permission
+- `404 Not Found`: Wrong object or bucket
+- `400 Bad Request`: Invalid URL syntax
+
+**Key Tasks:**
+- Created S3 bucket via CLI/Console
+- Uploaded test object
+- Created IAM user with limited access
+- Simulated and fixed permission errors using IAM and bucket policies
+- Used `--debug` flag to trace CLI-level access issues
+
+---
+
+### 🟩 **Day 2: EC2 Boot & SSH Access Troubleshooting**
+
+**Simulated Errors:**
+- Timeout on SSH (port 22 blocked)
+- Key pair not attached
+- Wrong SSH user
+- Console logs missing
+
+**Key Tasks:**
+- Launched EC2 without key pair + blocked port 22
+- Attempted SSH from local Ubuntu VM
+- Debugged using:
+  - `describe-instances`
+  - `get-console-output`
+- Fixed by:
+  - Opening port 22 in SG
+  - Relaunching EC2 with valid key pair
+  - Using correct SSH user (`ubuntu`)
+  - Rebooting instance and checking logs
+
+---
 
 ---
 
@@ -46,6 +75,10 @@
 - [CLI - Debbugging S3](./Screenshots/CLI%20-%20Debugging%20S3.png)
 - [Permission error (403) on CLI](./Screenshots/CLI%20-%20BucketPolicyRestriction.png)
 
+- [EC2 Issue Simulation](./Screenshots/Simulating%20EC2%20issue.png)
+- [Debugged KeyPair issue](./Screenshots/Debugged%20Keypair%20issue.png)
+- [Debugged SSH issue](./Screenshots/Dubugging%20SSH.png)
+
 ---
 
 ## Policies
@@ -55,16 +88,15 @@
 
 ## 🧠 Reflections
 
-- Learned how S3 permissions are layered: IAM + bucket policy + block public access
-- `403` can mean multiple root causes — not just lack of permission
-- `404` happens even with permission if the object path is wrong
-- CLI `--debug` flag is extremely helpful for root cause tracing
-- This mirrors how real customer S3 issues come in at L1 support level
+- 🔐 **S3:** Realized how access to objects depends on IAM + bucket policy + block public access. `403` errors are not always straightforward.
+- 💻 **EC2:** Gained hands-on experience with SSH troubleshooting: SG misconfig, key mismatch, wrong username — just like real-world escalations.
+- 🛠️ CLI tools like `--debug`, `describe-instances`, and `get-console-output` are critical in support triage workflows.
 
 ---
 
 ## 🔗 Resources
 
 - [S3 Bucket Policy Examples](https://docs.aws.amazon.com/AmazonS3/latest/userguide/example-bucket-policies.html)
-- [Understanding Amazon S3 Access Permissions](https://docs.aws.amazon.com/AmazonS3/latest/userguide/using-with-s3-actions.html)
-- [AWS CLI S3 Commands](https://docs.aws.amazon.com/cli/latest/reference/s3/)
+- [EC2 Key Pair Troubleshooting](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-key-pairs.html)
+- [SSH Troubleshooting for EC2](https://repost.aws/knowledge-center/ec2-linux-resolve-ssh-connection-errors)
+- [AWS CLI Command Reference](https://docs.aws.amazon.com/cli/latest/index.html)
