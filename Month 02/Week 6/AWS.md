@@ -114,12 +114,17 @@ Re-tested and validated access
 - [Debugged KeyPair issue](./Screenshots/Debugged%20Keypair%20issue.png)
 - [Debugged SSH issue](./Screenshots/Dubugging%20SSH.png)
 
+- [IAM User with limited access](./Screenshots/IAM%20with%20limited%20access.png)
+- [Debugging IAM access issue](./Screenshots/Dubbging%20IAM%20issue.png)
+- [IAM Explicit Deny Policy](./Screenshots/IAM%20inline%20Deny%20policy.png)
+
 ---
 
 ## Policies
 
 - [IAM Policy](./Policies/policy.json)
 - [Bucket Policy](./Policies/S3ReadOnlyPolicy.json)
+- [Inline IAM Policy](./Policies/inline_policy.json)
 
 ---
 
